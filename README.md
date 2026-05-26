@@ -1,3 +1,7 @@
+<div align="center">
+<img src="assets/mychatarchive-book-logo.png" alt="MyChatArchive" width="200">
+</div>
+
 # hermes-mychatarchive
 
 Standalone Hermes memory provider plugin for [MyChatArchive](https://github.com/1ch1n/mychatarchive).
