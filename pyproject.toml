@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-mychatarchive"
+version = "0.1.0"
+description = "MyChatArchive memory provider plugin for Hermes Agent"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Channing Chasko"},
+]
+keywords = [
+    "hermes",
+    "memory",
+    "chat-archive",
+    "sqlite",
+    "embeddings",
+    "vector-search",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mychatarchive @ git+https://github.com/1ch1n/mychatarchive",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+hermes-mychatarchive-install = "hermes_mychatarchive.install:install"
+
+[project.urls]
+Homepage = "https://github.com/1ch1n/hermes-mychatarchive"
+Repository = "https://github.com/1ch1n/hermes-mychatarchive"
+Issues = "https://github.com/1ch1n/hermes-mychatarchive/issues"
+
+[tool.setuptools.packages.find]
+include = ["hermes_mychatarchive*"]
