@@ -40,6 +40,7 @@ hermes memory setup   # select "mychatarchive"
 If you don't have an archive yet:
 
 ```bash
+mychatarchive init    # creates drop folder, configures auto-discovery
 mychatarchive sync    # import conversations from ChatGPT, Claude, etc.
 mychatarchive embed   # generate vector embeddings
 ```
@@ -126,4 +127,4 @@ defaults to `sentence-transformers/all-MiniLM-L6-v2` (384-dim, cosine).
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE) file.
